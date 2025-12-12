@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Terra Pulse — Field Advisory</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="https://raw.githubusercontent.com/<your-username>/terra-pulse-demo/main/logo.png" alt="TerraPulse" class="logo" />
+      <h1>Terra Pulse</h1>
+      <p class="subtitle">Tap → Verify → Get Field Advice</p>
+    </header>
+
+    <main class="card">
+      <div id="tapBox" class="tap-box">
+        <div class="pulse-icon" aria-hidden="true"></div>
+        <div class="tap-text">Tap your Praxis Card / Open the link</div>
+      </div>
+
+      <div class="status-row">
+        <div><strong>Field ID:</strong> <span id="fieldId">—</span></div>
+        <div><strong>GPS:</strong> <span id="gps">Waiting…</span></div>
+      </div>
+
+      <div id="loader" class="loader hidden">
+        <div class="spinner"></div>
+        <div class="loader-text">Fetching GPS and field data…</div>
+      </div>
+
+      <section id="advisory" class="advisory hidden">
+        <h2>Field Advisory</h2>
+        <div class="adv-row"><strong>Recommended crop:</strong> <span id="crop">—</span></div>
+        <div class="adv-row"><strong>Sowing window:</strong> <span id="sow">—</span></div>
+        <div class="adv-row"><strong>Water schedule:</strong> <span id="water">—</span></div>
+        <div class="adv-row"><strong>Fertilizer:</strong> <span id="fert">—</span></div>
+        <div class="adv-row"><strong>Confidence:</strong> <span id="conf">—</span></div>
+
+        <div class="actions">
+          <button id="playBtn" class="btn">Play Voice Advisory</button>
+          <button id="pdfBtn" class="btn outline">Download Praxis Card (PDF)</button>
+        </div>
+      </section>
+
+      <div id="message" class="message"></div>
+    </main>
+
+    <footer>
+      <small>Offline demo • Replace URL with backend when ready</small>
+    </footer>
+  </div>
+
+  <audio id="voice" src="audio_advisory.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

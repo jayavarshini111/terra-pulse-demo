@@ -1,0 +1,33 @@
+{
+    "fields": [
+      {
+        "field_id": "TP001",
+        "owner": "R. Kumar",
+        "village": "Demo Village",
+        "recommendation": {
+          "crop": "Groundnut",
+          "sow_window": ["2026-06-01", "2026-06-10"]
+        },
+        "operations": {
+          "fertilizer": "NPK 17:17:17 - 45 kg/ha",
+          "watering": "Twice per week"
+        },
+        "confidence": 0.82
+      },
+      {
+        "field_id": "DEMO-01",
+        "owner": "Test Farmer",
+        "village": "Demo Block",
+        "recommendation": {
+          "crop": "Maize",
+          "sow_window": ["2026-06-10", "2026-06-20"]
+        },
+        "operations": {
+          "fertilizer": "50 kg NPK 17:17:17",
+          "watering": "Three times per week"
+        },
+        "confidence": 0.74
+      }
+    ]
+  }
+  
